@@ -10,6 +10,8 @@ const Notes =({notes}) => {
     return (
         <div className="Notes">
             {notesComponents}
+
+           
         </div>
     )
 }

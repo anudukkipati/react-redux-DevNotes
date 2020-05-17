@@ -57,6 +57,7 @@ li a {
 .notecard {
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 5px;
 }
 
 .noteshow {
@@ -69,4 +70,10 @@ li a {
 }
 .link a{
   text-decoration: none;
+}
+.jumbotron{
+  background-image: url(https://images.unsplash.com/photo-1518384401463-d3876163c195?ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80);
+  background-repeat: no-repeat, repeat;
+ 
+  margin-top: 60px;
 }

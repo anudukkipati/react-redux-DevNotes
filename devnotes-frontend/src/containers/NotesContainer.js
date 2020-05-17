@@ -20,6 +20,7 @@ class NotesContainer extends Component {
              
            
              <Notes notes={this.props.notes}/>
+            
          </React.Fragment>
         )
        
