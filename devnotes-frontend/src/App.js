@@ -1,6 +1,6 @@
 import React from 'react';
 //import logo from './logo.svg';
-import { Route, Switch, withRouter } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Header from './components/Header.js'

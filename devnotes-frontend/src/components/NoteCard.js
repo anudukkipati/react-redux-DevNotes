@@ -24,4 +24,3 @@ const NoteCard = ({note: {title, content, url, id} }) => {
 }
 
 export default NoteCard
-// <button onClick={()=>this.props.dispatch({type:'DELETE_NOTE',id: id})}>Delete</button>
