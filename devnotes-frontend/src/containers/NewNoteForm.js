@@ -24,13 +24,16 @@ class NewNoteForm extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
+        console.log('a')
         this.props.createNote(this.state, this.props.history)
            .then(response => {
+               console.log('g')
                if(!response.error)  {
                    this.resetForm()
                    this.props.history.push("/notes")
                }
            })
+        console.log('h')
     }
 
     render() {
