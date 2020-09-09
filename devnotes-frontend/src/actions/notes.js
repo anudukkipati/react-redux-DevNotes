@@ -37,9 +37,9 @@ export const loadNotes = notes => {
  }
  
  export const createNote = (note) => {
-     console.log('b')
+     
      return dispatch => {
-         console.log('c')
+        
          const body = {
              note
          }
@@ -53,7 +53,7 @@ export const loadNotes = notes => {
          })
            .then(resp => resp.json())
            .then(newNote =>{
-               console.log('d')
+              
                if(newNote.error) {
                    alert(newNote.error)
                } else{
@@ -61,9 +61,9 @@ export const loadNotes = notes => {
                }
                return newNote
            })
-           console.log('e')
+          
      }
-     console.log('f')
+     
  }
 
  

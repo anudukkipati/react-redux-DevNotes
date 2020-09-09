@@ -7,8 +7,7 @@ class NoteShow extends Component {
       }
 
     componentDidMount() {
-       //debugger
-        console.log(this.props)
+       
         let id = this.props.match.params.id;
     
         fetch(`http://localhost:3001/api/notes/${id}`)
@@ -22,8 +21,7 @@ class NoteShow extends Component {
 
 
     render(){
-       console.log("from render", this.state.note)
-       console.log("from render", this.props)
+       
         return(
             <div className="noteshow">
                 

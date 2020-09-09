@@ -28,7 +28,7 @@ class NotesContainer extends Component {
 
     render(){
         const filteredNotes = this.props.notes.filter(note => {
-           return note.title.toLowerCase().indexOf(this.state.search.toLocaleLowerCase()) !== -1
+           return note.title.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
         })
         return(
             <React.Fragment>

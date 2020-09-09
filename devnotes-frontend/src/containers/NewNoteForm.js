@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from "react-redux"
 import {createNote} from "../actions/notes.js"
-import Form from 'react-bootstrap/Form'
+//import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 
 const initialState = {
@@ -24,7 +24,7 @@ class NewNoteForm extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
-        console.log('a')
+       
         this.props.createNote(this.state, this.props.history)
            .then(response => {
                console.log('g')
@@ -33,12 +33,11 @@ class NewNoteForm extends Component {
                    this.props.history.push("/notes")
                }
            })
-        console.log('h')
+        
     }
 
     render() {
-        console.log(this.state)
-        //debugger
+        
         return (
             <div className="NewNoteForm">
                 <h4>Add a new note</h4>
@@ -65,7 +64,7 @@ class NewNoteForm extends Component {
                         <br></br>
                         <br></br>
                         
-                        {/* <input type="submit" value="Create Note" />*/}
+                      
                         <Button variant="primary" type="submit">
                                 Create Note
                         </Button>
